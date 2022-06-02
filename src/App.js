@@ -5,7 +5,7 @@ import NavBar from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="container">
+    <div className="backgr">
       <NavBar />
       <Switch>
         <Route path="/" exact component={Home} />

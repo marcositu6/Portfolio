@@ -7,12 +7,14 @@ import logo from "../../assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
-import { ImBlog } from "react-icons/im";
+import { ImPlay } from "react-icons/im";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+
+import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -86,13 +88,17 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link href="#" target="_blank" rel="noreferrer">
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+              <Nav.Link
+                href="https://www.youtube.com/channel/UC9w82fODcKZ3ZBYavH71XgQ"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImPlay style={{ marginBottom: "2px" }} /> Videos
               </Nav.Link>
             </Nav.Item>
           </Nav>

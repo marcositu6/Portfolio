@@ -8,43 +8,24 @@ class Home extends Component {
   render() {
     return (
       <>
-        <Header handleBack={this.handleBack} handleSkip={this.handleSkip} />
-        <form className="app-form" onSubmit={this.handleNext}>
-          <label className="app-form__question">
-            {this.state.questionTitle}
-            <select className="app-form__responses" defaultValue="select">
-              <option
-                className="app-form__responses--select"
-                name="select"
-                disabled=""
-              >
-                Select
-              </option>
-              {this.state.options &&
-                this.state.options.map((option, index) => {
-                  return (
-                    <option
-                      className="app-form__responses--select"
-                      name={option}
-                      value={option}
-                      key={index}
-                    >
-                      {option}
-                    </option>
-                  );
-                })}
-            </select>
-          </label>
-          <div className="footer">
-            <h2 className="app-form__name">shopify</h2>
-            <Button
-              children="Next"
-              className="app-form__button"
-              type="button"
-              onClick={this.handleNext}
-            />
-          </div>
-        </form>
+        <nav className="home">
+          <section className="home-hero">
+            <div className="home-hero-text">
+              <h1 className="home-hero-text__name">Hello! my name is marcos</h1>
+              <h3 className="home-hero-text__description">
+                Web developer in Vancouver with a background in graphic design
+              </h3>
+            </div>
+            <div className="home-hero-imgph">
+              <img
+                className="home-hero-imgph__img"
+                alt="hero image"
+                src="../assets/images/heroIMG.png"
+              ></img>
+            </div>
+          </section>
+          <section className="home-description"></section>
+        </nav>
       </>
     );
   }

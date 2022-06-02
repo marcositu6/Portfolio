@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 .sticky {
   background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;
@@ -20,7 +25,7 @@
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #ffa95f !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -117,7 +122,7 @@
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #ffa95f;
   bottom: 1px;
   left: 0;
   z-index: -1;
